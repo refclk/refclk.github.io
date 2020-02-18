@@ -17,7 +17,7 @@
   <!-- PACE Progress Bar START -->
 
   
-  <title>archives: 2020 | test-title</title>
+  <title>test-title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
@@ -25,7 +25,7 @@
   
   <meta property="og:type" content="website">
 <meta property="og:title" content="test-title">
-<meta property="og:url" content="http://refclk.github.io/archives/2020/index.html">
+<meta property="og:url" content="http://refclk.github.io/page/4/index.html">
 <meta property="og:site_name" content="test-title">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Leo Zhou">
@@ -129,130 +129,110 @@ var themeMenus = {};
       <div id="content" class="outer">
         
           <section id="main">
-  <div class="archives-tags-wrap"><blockquote><span>There are 5 posts in total till now.</span></blockquote>
+  
+    <article id="post-Resistor-E96-Codes"  class="article article-type-post" itemscope itemprop="blogPost" >
+
+
+
+<script src="/js/r_e96_code.js"></script>
 
 
 
 
-	<!-- 分页显示 -->
-	
-	
-		
-		
-		  
-		  
-		  <section class="archives-wrap">
-		    <div class="archive-year-wrap">
-		      <h1><a href="/archives/2020" class="archive-year">2020</a></h1>
-		    </div>
-		    <div class="archives">
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-
-      <a href="/2020/02/18/Resistor-Codes/" class="archive-article-date">
-		  <time datetime="2020-02-18T23:23:23.000Z" itemprop="datePublished">Feb 18, 2020</time>
-	  </a>
-      
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
   
     <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2020/02/18/Resistor-Codes/">Resistor Codes</a>
+      <a class="article-title" href="/2020/02/18/Resistor-E96-Codes/">EIA E96 Coding for Resistor</a>
     </h1>
   
 
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-
-      <a href="/2020/02/18/Resistor-Color-Codes/" class="archive-article-date">
-		  <time datetime="2020-02-18T03:03:03.000Z" itemprop="datePublished">Feb 18, 2020</time>
-	  </a>
+      </header>
+    
+    <div class="article-meta">
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2020/02/18/Resistor-Color-Codes/">Color Codes Marking for Resistor</a>
-    </h1>
-  
+	Posted on <a href="/2020/02/18/Resistor-E96-Codes/" class="article-date">
+	  <time datetime="2020-02-18T01:01:01.000Z" itemprop="datePublished">February 18, 2020</time>
+	</a>
 
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-
-      <a href="/2020/02/18/Resistor-RMK-Codes/" class="archive-article-date">
-		  <time datetime="2020-02-18T02:02:02.000Z" itemprop="datePublished">Feb 18, 2020</time>
-	  </a>
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2020/02/18/Resistor-RMK-Codes/">RMK Marking for Resistor</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-
-      <a href="/2020/02/18/Resistor-E96-Codes/" class="archive-article-date">
-		  <time datetime="2020-02-18T01:01:01.000Z" itemprop="datePublished">Feb 18, 2020</time>
-	  </a>
+    </div>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2020/02/18/Resistor-E96-Codes/">EIA E96 Coding for Resistor</a>
-    </h1>
-  
+        <img src="/2020/02/18/Resistor-E96-Codes/e96-code-resistor.jpg" class="" title="color coded resistor">
+<p>EIA E96 Coding is used for 1% precision 0603 resistors.It starts with two-digit code followed by a letter multiplier. Each letter, from “A” — “Z”, represents a specific multiplier.For example, 68X indicates a resistor value of 49.9Ω.The two-digit code refers to one of the E96 series numbers.<br>The standard IEC60062 gives a good explanation for it.</p>
+<hr>
+<h1 id="Calculator"><a href="#Calculator" class="headerlink" title="Calculator"></a>Calculator</h1><script>
 
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
+   window.onload=function(){
+      show_e96_code_table("#e96-code");
+      show_e96_multiplier_table("#e96-multiplier");
+   }
+</script>
+<p>Input a value here: <input type="text" maxlength=3 oninput="gen_EIA96_val('#ret1',this.value)" ></input> (For example, 68X)</p>
+<div style="padding: 0.1px 20px;font-size: 1.1em;margin: 1.4em 0px;border-left: 0;background: #f3f5f9;" id="ret1">
+    <b>Please input a value to get the result!</b>
+</div>
 
-      <a href="/2020/02/05/IEC60063/" class="archive-article-date">
-		  <time datetime="2020-02-05T02:59:01.000Z" itemprop="datePublished">Feb 05, 2020</time>
-	  </a>
+<hr>
+<h1 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h1><h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><table id="e96-code">
+</table>
+
+<h2 id="multiplier"><a href="#multiplier" class="headerlink" title="multiplier"></a>multiplier</h2><table id="e96-multiplier">
+</table>
+
+<hr>
+<h1 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h1><table>
+   <tr><th colspan="2">Examples of resistance values</th></tr>
+   <tr><td>68A</td><td>499Ω</td></tr>
+   <tr><td>68B</td><td>4.99kΩ</td></tr>
+   <tr><td>68C</td><td>49.9kΩ</td></tr>
+   <tr><td>68D</td><td>499kΩ</td></tr>
+   <tr><td>68E</td><td>4.99MΩ</td></tr>
+   <tr><td>68F</td><td>49.9MΩ</td></tr>
+   <tr><td>68X</td><td>49.9Ω</td></tr>
+   <tr><td>68Y</td><td>4.99Ω</td></tr>
+   <tr><td>68Z</td><td>0.499Ω</td></tr>
+</table> 
+
+<hr>
+<h1 id="See-Also"><a href="#See-Also" class="headerlink" title="See Also:"></a>See Also:</h1><a href="/2020/02/18/Resistor-Codes/" title="Resistor Codes">Resistor Codes</a><br>
+<a href="/2020/02/05/IEC60063/" title="Preferred number series for resistors and capacitors(IEC60063)">Preferred number series for resistors and capacitors(IEC60063)</a>
+
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2020/02/05/IEC60063/">Preferred number series for resistors and capacitors(IEC60063)</a>
-    </h1>
-  
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/EE/">EE</a>, <a class="article-category-link" href="/categories/EE/Resistor/">Resistor</a>, <a class="article-category-link" href="/categories/EE/Resistor/Marking/">Marking</a>
 
-    </header>
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/E-96-Codes/" rel="tag">E-96 Codes</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IEC60062/" rel="tag">IEC60062</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Resistor/" rel="tag">Resistor</a></li></ul>
+
+      
+            
+      
+    </footer>
   </div>
+  
 </article>
-	
-	
-		</div></section>
-	
 
-	<!-- 页数指示器 -->
-	
+<!-- Table of Contents -->
+
+    
 
 
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/3/">Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">Next</a>
+  </nav>
 
 </section>
           <aside id="sidebar">
